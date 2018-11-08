@@ -59,23 +59,23 @@ window.onload = function () {
 let slide_data = [
     {
         'src': 'img/kk.jpg',
-        'title': 'Kupa',
+        'title': 'Inne prace',
         'copy': 'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
   },
     {
         'src': 'img/mario.png',
-        'title': 'Slide 2',
-        'copy': 'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
+        'title': 'Mario',
+        'copy': 'Gra mario wykonanan w js'
   },
     {
         'src': 'img/pong.png',
-        'title': 'Slide 3',
-        'copy': 'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
+        'title': 'Gra PingPong',
+        'copy': 'Gra PingPong wykonana w js'
   },
     {
         'src': 'img/CM.png',
-        'title': 'Slide 4',
-        'copy': 'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
+        'title': 'Strona Wsparcie W startcie',
+        'copy': 'Stworzenie strony dla projektu wsparcie w starcie'
   },
 
 ];
@@ -109,6 +109,10 @@ for (let i = 0; i < slide_data.length; i++) {
     caption.classList.add('caption');
     slide_title.classList.add('caption-heading');
     slide_title.innerHTML = '<h1>' + slide_data[i].title + '</h1>';
+    if(slide_data[i].src== 'img/mario.png'){
+            slide.classList.add('mario');
+
+    }
 
     switch (i) {
         case 0:
